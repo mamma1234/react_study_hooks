@@ -10,6 +10,7 @@ import UseRefSample from "./UseRefSample";
 import UseInputsSample from "./UseInputsSample";
 import UsePromiseSample from "./UsePromiseSample";
 import UseContextSample from "./UseContextSample";
+import Composition from "./Composition";
 const App = () => {
   const [visible, setVisible] = useState(false);
   const [myname, setMyname] = useState("father");
@@ -41,6 +42,7 @@ const App = () => {
       <div>------------------------------------------</div>
       <UseContextSample />
       <CreateContextSample />
+      <Composition />
       <div>------------------------------------------</div>
       <UseReducerSample />
       <UseReducer2Sample />

@@ -22,9 +22,13 @@ function UseContextSample() {
 }
 
 function Toolbar(props) {
+  // const theme = React.useContext(ThemeContext);
   return (
     <div>
       <ThemedButton />
+      {/* <ThemeContext.Consumer> */}
+      <button>Toggle Theme</button>
+      {/* </ThemeContext.Consumer> */}
     </div>
   );
 }
