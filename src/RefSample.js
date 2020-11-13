@@ -34,7 +34,7 @@ class RefSample extends Component {
             this.box = ref;
           }}
         >
-          <h2>TITLE</h2>
+          <h4>TITLE</h4>
           <p>Content</p>
         </div>
         <p>

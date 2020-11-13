@@ -7,14 +7,29 @@ import UseReducer2Sample from "./UseReducer2Sample";
 import UseMemoSample from "./UseMemoSample";
 import UseCallbackSample from "./UseCallbackSample";
 import UseRefSample from "./UseRefSample";
-import UseInputsSample from "./UseInputsSample";
-import UsePromiseSample from "./UsePromiseSample";
+// import UseInputsSample from "./UseInputsSample";
+// import UsePromiseSample from "./UsePromiseSample";
 import UseContextSample from "./UseContextSample";
 import Composition from "./Composition";
 import RefSample from "./RefSample";
 import UseImperativeHandleSample from "./UseImperativeHandleSample";
 import UseLayoutEffectSample from "./UseLayoutEffectSample";
 import UseDebugValueSample from "./UseDebugValueSample";
+
+import UserInput from "./UserInput";
+import UserPromise from "./UserPromise";
+import UserTabs from "./UserTabs";
+import UserTitle from "./UserTitle";
+import UserClick from "./UserClick";
+import UserConfirm from "./UserConfirm";
+import UserBeforeLeave from "./UserBeforeLeave";
+import UserFadeIn from "./UserFadeIn";
+import UserNetwork from "./UserNetwork";
+import UserScroll from "./UserScroll";
+import UserFullscreen from "./UserFullscreen";
+import UserNotification from "./UserNotification";
+import UserAxios from "./UserAxios";
+
 const App = () => {
   const [visible, setVisible] = useState(false);
   const [myname, setMyname] = useState("father");
@@ -25,6 +40,7 @@ const App = () => {
 
   return (
     <>
+      <h1>Hooks</h1>
       <UseStateSample />
       <div>------------------------------------------</div>
       <button
@@ -64,8 +80,21 @@ const App = () => {
       <div>------------------------------------------</div>
       <UseDebugValueSample />
       <div>------------------------------------------</div>
-      <UseInputsSample />
-      <UsePromiseSample />
+
+      <h1>User Hooks</h1>
+      <UserInput />
+      <UserPromise />
+      <UserTabs />
+      <UserTitle />
+      <UserClick />
+      <UserConfirm />
+      <UserBeforeLeave />
+      <UserFadeIn />
+      <UserNetwork />
+      <UserScroll />
+      <UserFullscreen />
+      <UserNotification />
+      <UserAxios />
     </>
   );
 };

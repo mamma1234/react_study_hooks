@@ -11,7 +11,7 @@ function FancyBorder(props) {
 function Composition() {
   return (
     <FancyBorder color="blue">
-      <h1 className="Dialog-title">합성 Composition</h1>
+      <h3 className="Dialog-title">합성 Composition</h3>
       <p className="Dialog-message">Thank you for visiting our spacecraft!</p>
     </FancyBorder>
   );
