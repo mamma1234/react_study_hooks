@@ -1,7 +1,7 @@
-import React, { useState, useMemo, useCallback } from 'react';
+import React, { useState, useMemo, useCallback } from "react";
 
-const getAverage = numbers => {
-  console.log('평균값 계산중..');
+const getAverage = (numbers) => {
+  console.log("평균값 계산중..");
   if (numbers.length === 0) return 0;
   const sum = numbers.reduce((a, b) => a + b);
   return sum / numbers.length;
@@ -9,18 +9,18 @@ const getAverage = numbers => {
 
 const UseCallbackSample = () => {
   const [list, setList] = useState([]);
-  const [number, setNumber] = useState('');
+  const [number, setNumber] = useState("");
 
-  const onChange = useCallback(e => {
-    console.log('onChange 함수');
+  const onChange = useCallback((e) => {
+    console.log("onChange 함수");
     setNumber(e.target.value);
   }, []); // 컴포넌트가 처음 렌더링 될 때만 함수 생성
   const onInsert = useCallback(
-    e => {
-      console.log('onInsert 함수');
+    (e) => {
+      console.log("onInsert 함수");
       const nextList = list.concat(parseInt(number));
       setList(nextList);
-      setNumber('');
+      setNumber("");
     },
     [number, list]
   ); // number 혹은 list 가 바뀌었을 때만 함수 생성
@@ -29,7 +29,8 @@ const UseCallbackSample = () => {
 
   return (
     <div>
-      <input value={number} onChange={onChange}  />
+      <h4>useCallback</h4>
+      <input value={number} onChange={onChange} />
       <button onClick={onInsert}>등록</button>
       <ul>
         {list.map((value, index) => (

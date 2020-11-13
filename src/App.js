@@ -11,6 +11,10 @@ import UseInputsSample from "./UseInputsSample";
 import UsePromiseSample from "./UsePromiseSample";
 import UseContextSample from "./UseContextSample";
 import Composition from "./Composition";
+import RefSample from "./RefSample";
+import UseImperativeHandleSample from "./UseImperativeHandleSample";
+import UseLayoutEffectSample from "./UseLayoutEffectSample";
+import UseDebugValueSample from "./UseDebugValueSample";
 const App = () => {
   const [visible, setVisible] = useState(false);
   const [myname, setMyname] = useState("father");
@@ -46,10 +50,20 @@ const App = () => {
       <div>------------------------------------------</div>
       <UseReducerSample />
       <UseReducer2Sample />
-
-      <UseMemoSample />
+      <div>------------------------------------------</div>
       <UseCallbackSample />
+      <div>------------------------------------------</div>
+      <UseMemoSample />
+      <div>------------------------------------------</div>
       <UseRefSample />
+      <RefSample />
+      <div>------------------------------------------</div>
+      <UseImperativeHandleSample />
+      <div>------------------------------------------</div>
+      <UseLayoutEffectSample />
+      <div>------------------------------------------</div>
+      <UseDebugValueSample />
+      <div>------------------------------------------</div>
       <UseInputsSample />
       <UsePromiseSample />
     </>

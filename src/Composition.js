@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 function FancyBorder(props) {
   return (
@@ -11,7 +11,7 @@ function FancyBorder(props) {
 function Composition() {
   return (
     <FancyBorder color="blue">
-      <h1 className="Dialog-title">Welcome</h1>
+      <h1 className="Dialog-title">합성 Composition</h1>
       <p className="Dialog-message">Thank you for visiting our spacecraft!</p>
     </FancyBorder>
   );
