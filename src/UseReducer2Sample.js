@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import React, { useReducer } from "react";
 
 function reducer(state, action) {
   return {
@@ -9,12 +9,12 @@ function reducer(state, action) {
 
 const UseReducer2Sample = () => {
   const [state, dispatch] = useReducer(reducer, {
-    name: '',
-    nickname: ''
+    name: "",
+    nickname: ""
   });
   const { name, nickname } = state;
-  const onChange = e => {
-    dispatch(e.target);
+  const onChange = (e) => {
+    nickname(e.target);
   };
 
   return (

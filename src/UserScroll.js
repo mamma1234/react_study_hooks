@@ -21,7 +21,7 @@ export default function UserScroll() {
   return (
     <div className="App" style={{ height: "1000vh" }}>
       <h5
-        style={{ top: 250, position: "fixed", color: y > 100 ? "red" : "blue" }}
+        style={{ top: 250, position: "fixed", color: y > 10 ? "red" : "blue" }}
       >
         User Scroll
       </h5>

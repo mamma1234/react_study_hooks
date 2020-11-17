@@ -41,7 +41,7 @@ const App = () => {
   return (
     <>
       <h1>Hooks</h1>
-      <UseStateSample />
+      {/* <UseStateSample />
       <div>------------------------------------------</div>
       <button
         onClick={() => {
@@ -59,19 +59,19 @@ const App = () => {
         </div>
       )}
       {visible && <UseEffectSample parentname={myname} />}
-      <div>------------------------------------------</div>
-      <UseContextSample />
+      <div>------------------------------------------</div> */}
+      {/* <UseContextSample />
       <CreateContextSample />
-      <Composition />
-      <div>------------------------------------------</div>
-      <UseReducerSample />
+      <Composition /> */}
+      {/* <div>------------------------------------------</div> */}
+      {/* <UseReducerSample />
       <UseReducer2Sample />
       <div>------------------------------------------</div>
       <UseCallbackSample />
       <div>------------------------------------------</div>
       <UseMemoSample />
-      <div>------------------------------------------</div>
-      <UseRefSample />
+      <div>------------------------------------------</div> */}
+      {/* <UseRefSample />
       <RefSample />
       <div>------------------------------------------</div>
       <UseImperativeHandleSample />
@@ -79,22 +79,22 @@ const App = () => {
       <UseLayoutEffectSample />
       <div>------------------------------------------</div>
       <UseDebugValueSample />
-      <div>------------------------------------------</div>
+      <div>------------------------------------------</div> */}
 
       <h1>User Hooks</h1>
-      <UserInput />
-      <UserPromise />
-      <UserTabs />
-      <UserTitle />
-      <UserClick />
-      <UserConfirm />
-      <UserBeforeLeave />
-      <UserFadeIn />
-      <UserNetwork />
-      <UserScroll />
-      <UserFullscreen />
-      <UserNotification />
-      <UserAxios />
+      {/* <UserInput /> */}
+      {/* <UserPromise /> */}
+      {/* <UserTabs /> */}
+      {/* <UserTitle /> */}
+      {/* <UserClick /> */}
+      {/* <UserConfirm /> */}
+      {/* <UserBeforeLeave /> */}
+      {/* <UserFadeIn /> */}
+      {/* <UserNetwork /> */}
+      {/* <UserScroll /> */}
+      {/* <UserFullscreen /> */}
+      {/* <UserNotification /> */}
+      {/* <UserAxios /> */}
     </>
   );
 };

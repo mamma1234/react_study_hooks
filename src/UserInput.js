@@ -1,4 +1,5 @@
 import React, { useState, useReducer } from "react";
+import useInput3 from "./useInputs";
 
 const useInput = (initialValue) => {
   const [value, setValue] = useState(initialValue);
@@ -31,20 +32,20 @@ const useInput2 = (initialValue, validator) => {
   return { value, onChange };
 };
 
-function reducer(state, action) {
-  return {
-    ...state,
-    [action.name]: action.value
-  };
-}
+// function reducer(state, action) {
+//   return {
+//     ...state,
+//     [action.name]: action.value
+//   };
+// }
 
-const useInput3 = (initialForm) => {
-  const [state, dispatch] = useReducer(reducer, initialForm);
-  const onChange = (e) => {
-    dispatch(e.target);
-  };
-  return [state, onChange];
-};
+// const useInput3 = (initialForm) => {
+//   const [state, dispatch] = useReducer(reducer, initialForm);
+//   const onChange = (e) => {
+//     dispatch(e.target);
+//   };
+//   return [state, onChange];
+// };
 
 export default function UserInput() {
   const [item, setItem] = useState(1);
