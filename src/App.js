@@ -30,6 +30,8 @@ import UserFullscreen from "./UserFullscreen";
 import UserNotification from "./UserNotification";
 import UserAxios from "./UserAxios";
 
+import TestRef from "./testRef";
+
 const App = () => {
   const [visible, setVisible] = useState(false);
   const [myname, setMyname] = useState("father");
@@ -40,6 +42,8 @@ const App = () => {
 
   return (
     <>
+      <TestRef />
+
       <h1>Hooks</h1>
       {/* <UseStateSample />
       <div>------------------------------------------</div>
