@@ -29,8 +29,7 @@ import UserScroll from "./UserScroll";
 import UserFullscreen from "./UserFullscreen";
 import UserNotification from "./UserNotification";
 import UserAxios from "./UserAxios";
-
-import TestRef from "./testRef";
+import TestRef from "./TestRef";
 
 const App = () => {
   const [visible, setVisible] = useState(false);
@@ -42,8 +41,6 @@ const App = () => {
 
   return (
     <>
-      <TestRef />
-
       <h1>Hooks</h1>
       {/* <UseStateSample />
       <div>------------------------------------------</div>
@@ -99,6 +96,7 @@ const App = () => {
       {/* <UserFullscreen /> */}
       {/* <UserNotification /> */}
       {/* <UserAxios /> */}
+      <TestRef />
     </>
   );
 };
